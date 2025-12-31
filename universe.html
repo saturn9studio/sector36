@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Sector 36 universe - technology, factions, star map, and timeline from the hard military sci-fi novel.">
+  <title>The Universe | Sector 36</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/s9.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v31/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=block" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">S36</div>
+        <div class="nav-logo-text">SECTOR <span>36</span></div>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="story.html" class="nav-link">The Story</a></li>
+        <li><a href="universe.html" class="nav-link active">The Universe</a></li>
+        <li><a href="classified.html" class="nav-link">Classified Files</a></li>
+        <li><a href="about.html" class="nav-link">About/Buy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label">// Database Access</span>
+      <h1>The Universe</h1>
+      <p class="section-subtitle">
+        Technology, corporations, and the detailed worldbuilding of Sector 36.
+      </p>
+    </div>
+  </section>
+
+  <!-- Universe Navigation Tabs -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs">
+        <nav class="tabs-nav">
+          <button class="tab-btn active" data-tab="technology">Technology</button>
+          <button class="tab-btn" data-tab="corporations">Corporations</button>
+          <button class="tab-btn" data-tab="map">Star Map</button>
+          <button class="tab-btn" data-tab="timeline">Timeline</button>
+        </nav>
+        
+        <div class="tabs-content">
+          <!-- Technology Tab -->
+          <div class="tab-pane active" id="technology">
+            <div class="section-header text-left mb-4">
+              <span class="section-label">// Technical Specifications</span>
+              <h2>Core Technologies</h2>
+              <p class="text-secondary">
+                The scientific foundations that make interstellar civilization possible.
+              </p>
+            </div>
+            
+            <div class="grid grid-2 mt-4">
+              <div class="tech-card">
+                <div class="tech-header">
+                  <div class="tech-icon">🔗</div>
+                  <div>
+                    <h3 class="tech-title">Quantum Entanglement</h3>
+                    <div class="tech-category">Communications</div>
+                  </div>
+                </div>
+                <div class="tech-body">
+                  <p class="tech-description">
+                  The backbone of interstellar civilization. Entangled particle
+                  pairs enable instantaneous communication across any distance,
+                  connecting the scattered worlds of humanity in real-time.
+                  Omega AIs run their distributed consciousness across
+                  quantum-entangled substrates spanning multiple star systems.
+                  Without it, sectors would be isolated islands of light, weeks
+                  or months apart even at faster-than-light speeds. With it, a
+                  message sent from the Gateway Ring reaches Eureka Base before
+                  you finish your next breath.
+                  </p>
+                  <div class="tech-specs">
+                    <div class="spec-row">
+                      <span class="spec-label">Latency</span>
+                      <span class="spec-value">Instantaneous</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Bandwidth</span>
+                      <span class="spec-value">~100 Gbps (practical)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Range</span>
+                      <span class="spec-value">Unlimited (pair-dependent)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Particle Decay Rate</span>
+                      <span class="spec-value">0.003% annually</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-header">
+                  <div class="tech-icon">🌀</div>
+                  <div>
+                    <h3 class="tech-title">Jump Gates</h3>
+                    <div class="tech-category">Interstellar Transit</div>
+                  </div>
+                </div>
+                <div class="tech-body">
+                  <p class="tech-description">
+                  Miracles of engineering that make interstellar colonization
+                  possible. These massive structures enable instantaneous
+                  point-to-point travel between sectors—step through one gate,
+                  emerge from another light-years away. The physics are
+                  impossibly expensive to replicate, so gates remain the only
+                  bridges between distant stars, with two corporations as the
+                  duopoly providers of gate construction and maintenance.
+                  </p>
+                  <div class="tech-specs">
+                    <div class="spec-row">
+                      <span class="spec-label">Transit Time</span>
+                      <span class="spec-value">Instantaneous</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Connection</span>
+                      <span class="spec-value">Networked</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Throughput</span>
+                      <span class="spec-value">~3.1 million m<sup>3</sup>/hour</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Energy Draw</span>
+                      <span class="spec-value">2.4 TW per transit</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-header">
+                  <div class="tech-icon">💫</div>
+                  <div>
+                    <h3 class="tech-title">FTL Drive</h3>
+                    <div class="tech-category">Propulsion Systems</div>
+                  </div>
+                </div>
+                <div class="tech-body">
+                  <p class="tech-description">
+                  For travel within a sector, ships ride FTL—accelerating beyond
+                  lightspeed into a space outside normal causality. The journey
+                  takes days or weeks depending on distance, with no access
+                  whatsoever to the outside world. FTL is routine, unglamorous,
+                  and essential. It connects the worlds within a sector: the
+                  agricultural planets, mining operations, space stations, and
+                  military outposts that make up the scattered
+                  geography of human expansion.
+                  </p>
+                  <div class="tech-specs">
+                    <div class="spec-row">
+                      <span class="spec-label">Velocity</span>
+                      <span class="spec-value">Up to 250c (cruise)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Range</span>
+                      <span class="spec-value">Intra-sector</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Causal Status:</span>
+                      <span class="spec-value">Extra-causal</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Spin-up Time</span>
+                      <span class="spec-value">4-6 minutes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-header">
+                  <div class="tech-icon">🌐</div>
+                  <div>
+                    <h3 class="tech-title">The Digital</h3>
+                    <div class="tech-category">Network infrastructure</div>
+                  </div>
+                </div>
+                <div class="tech-body">
+                  <p class="tech-description">
+                  An omnipresent infosphere layered over physical reality. The
+                  digital is where messages flow, data lives, and most of
+                  humanity spends half their waking hours. It's accessed through
+                  neural implants that let users embed—projecting their
+                  consciousness into a seamless blend of information and
+                  interaction. For those who can fully embed, the digital is as
+                  real as the physical world. For the few who can't, it's a
+                  constant reminder of what they're missing.
+                  </p>
+                  <div class="tech-specs">
+                    <div class="spec-row">
+                      <span class="spec-label">Coverage</span>
+                      <span class="spec-value">99.8% (settled zones)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Access</span>
+                      <span class="spec-value">Ambient (implant required)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Latency</span>
+                      <span class="spec-value">&lt;1ns (embedded users)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Data Capacity</span>
+                      <span class="spec-value">Functionally unlimited</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-header">
+                  <div class="tech-icon">🧠</div>
+                  <div>
+                    <h3 class="tech-title">Neural Implants</h3>
+                    <div class="tech-category">Cybernetics</div>
+                  </div>
+                </div>
+                <div class="tech-body">
+                  <p class="tech-description">
+                  Most humans receive deep neural implants before school age,
+                  allowing them to embed fully into the digital. The interface
+                  is intimate—thoughts become commands, data flows directly into
+                  awareness, and the boundary between mind and network
+                  dissolves. Those rare few with NeuroSync Rejection Syndrome
+                  make do with external grafts—limited bandwidth and limited
+                  immersion.
+                  </p>
+                  <div class="tech-specs">
+                    <div class="spec-row">
+                      <span class="spec-label">Installation Window</span>
+                      <span class="spec-value">Ages 1-6 (optimal)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Integration Type</span>
+                      <span class="spec-value">Full cortical</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Rejection Rate</span>
+                      <span class="spec-value">0.00002%</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Bandwidth</span>
+                      <span class="spec-value">~40 Tbps (embedded)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-card">
+                <div class="tech-header">
+                  <div class="tech-icon">🔬</div>
+                  <div>
+                    <h3 class="tech-title">Nanotechnology</h3>
+                    <div class="tech-category">Applied Sciences</div>
+                  </div>
+                </div>
+                <div class="tech-body">
+                  <p class="tech-description">
+                  Microscopic machines integrated into nearly every aspect of
+                  human technology. Military-grade combat gloves deploy nanobots
+                  that burrow through armor and interface directly with a
+                  target's nervous system. Medical nanotendrils connect with
+                  damaged nerve endings to restore function. Construction relies
+                  on nanocrete—nano-reinforced building material found in
+                  everything from hab blocks to military installations.
+                  </p>
+                  <div class="tech-specs">
+                    <div class="spec-row">
+                      <span class="spec-label">Scale</span>
+                      <span class="spec-value">10-500 nanometers</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Power Source</span>
+                      <span class="spec-value">Ambient thermal/chemical</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Self-replication</span>
+                      <span class="spec-value">Prohibited</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-label">Coordination</span>
+                      <span class="spec-value">Distributed heuristic</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporations Tab -->
+          <div class="tab-pane" id="corporations">
+            <div class="section-header text-left mb-4">
+              <span class="section-label">// Market Analysis</span>
+              <h2>Major Corporations</h2>
+              <p class="text-secondary">
+                The corporate powers that shape commerce and industry across human space.
+              </p>
+            </div>
+
+            <div class="corp-grid mt-4">
+              <!-- Abyssal Mining Consortium -->
+              <div class="corp-card">
+                <div class="corp-header">
+                  <div class="corp-info">
+                    <h3 class="corp-name">Abyssal Mining Consortium</h3>
+                    <span class="corp-ticker">ABYS</span>
+                  </div>
+                  <div class="corp-price">
+                    <span class="price-value">3,412.87</span>
+                    <span class="price-change negative">-1.8%</span>
+                  </div>
+                </div>
+                <div class="corp-chart">
+                  <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+                    <polyline class="chart-line negative" points="0,42 20,38 40,35 60,30 80,25 100,20 120,16 140,12 160,10 180,12 200,15"/>
+                  </svg>
+                </div>
+                <div class="corp-sector">Mining & Resource Extraction</div>
+                <div class="corp-stats">
+                  <div class="corp-stat">
+                    <span class="stat-label">Mkt Cap</span>
+                    <span class="stat-value">71.9T</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Volume</span>
+                    <span class="stat-value">89.4M</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">P/E</span>
+                    <span class="stat-value">18.2</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">52W Range</span>
+                    <span class="stat-value">3,124-3,687</span>
+                  </div>
+                </div>
+                <p class="corp-news">Abyssal deploys private security to protect Forge extraction sites amid rising unrest in Sector 36.</p>
+              </div>
+
+              <!-- Obsidian Holdings -->
+              <div class="corp-card">
+                <div class="corp-header">
+                  <div class="corp-info">
+                    <h3 class="corp-name">Obsidian Holdings</h3>
+                    <span class="corp-ticker">OBSD</span>
+                  </div>
+                  <div class="corp-price">
+                    <span class="price-value">1,203.88</span>
+                    <span class="price-change negative">-8.7%</span>
+                  </div>
+                </div>
+                <div class="corp-chart">
+                  <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+                    <polyline class="chart-line negative" points="0,20 20,18 40,22 60,19 80,25 100,28 120,24 140,30 160,35 180,33 200,38"/>
+                  </svg>
+                </div>
+                <div class="corp-sector">Diversified Conglomerate</div>
+                <div class="corp-stats">
+                  <div class="corp-stat">
+                    <span class="stat-label">Mkt Cap</span>
+                    <span class="stat-value">28.4T</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Volume</span>
+                    <span class="stat-value">42.1M</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">P/E</span>
+                    <span class="stat-value">18.7</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">52W Range</span>
+                    <span class="stat-value">1,089-1,654</span>
+                  </div>
+                </div>
+                <p class="corp-news">Obsidian board members named in leaked AI Council advisory documents.</p>
+              </div>
+
+              <!-- OmniCore Solutions -->
+              <div class="corp-card">
+                <div class="corp-header">
+                  <div class="corp-info">
+                    <h3 class="corp-name">OmniCore Solutions</h3>
+                    <span class="corp-ticker">OMNI</span>
+                  </div>
+                  <div class="corp-price">
+                    <span class="price-value">892.15</span>
+                    <span class="price-change positive">+3.2%</span>
+                  </div>
+                </div>
+                <div class="corp-chart">
+                  <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+                    <polyline class="chart-line positive" points="0,40 20,38 40,35 60,32 80,30 100,28 120,25 140,22 160,18 180,15 200,12"/>
+                  </svg>
+                </div>
+                <div class="corp-sector">Infrastructure & Jump Gates</div>
+                <div class="corp-stats">
+                  <div class="corp-stat">
+                    <span class="stat-label">Mkt Cap</span>
+                    <span class="stat-value">31.2T</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Volume</span>
+                    <span class="stat-value">48.7M</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">P/E</span>
+                    <span class="stat-value">32.4</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">52W Range</span>
+                    <span class="stat-value">724-912</span>
+                  </div>
+                </div>
+                <p class="corp-news">OmniCore secures contract for Sector 38 jump gate construction.</p>
+              </div>
+
+              <!-- Dominion Nexus -->
+              <div class="corp-card">
+                <div class="corp-header">
+                  <div class="corp-info">
+                    <h3 class="corp-name">Dominion Nexus</h3>
+                    <span class="corp-ticker">DNEX</span>
+                  </div>
+                  <div class="corp-price">
+                    <span class="price-value">5,412.67</span>
+                    <span class="price-change negative">-2.1%</span>
+                  </div>
+                </div>
+                <div class="corp-chart">
+                  <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+                    <polyline class="chart-line negative" points="0,22 20,20 40,24 60,22 80,25 100,23 120,26 140,24 160,27 180,25 200,28"/>
+                  </svg>
+                </div>
+                <div class="corp-sector">Infrastructure & Jump Gates</div>
+                <div class="corp-stats">
+                  <div class="corp-stat">
+                    <span class="stat-label">Mkt Cap</span>
+                    <span class="stat-value">42.6T</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Volume</span>
+                    <span class="stat-value">56.3M</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">P/E</span>
+                    <span class="stat-value">22.1</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">52W Range</span>
+                    <span class="stat-value">4,987-5,823</span>
+                  </div>
+                </div>
+                <p class="corp-news">Dominion Nexus issues earnings revision due to jump gate traffic restrictions in Sector 36.</p>
+              </div>
+
+              <!-- VoidTech -->
+              <div class="corp-card">
+                <div class="corp-header">
+                  <div class="corp-info">
+                    <h3 class="corp-name">VoidTech</h3>
+                    <span class="corp-ticker">VOID</span>
+                  </div>
+                  <div class="corp-price">
+                    <span class="price-value">1,876.44</span>
+                    <span class="price-change positive">+18.9%</span>
+                  </div>
+                </div>
+                <div class="corp-chart">
+                  <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+                    <polyline class="chart-line positive" points="0,45 20,42 40,38 60,35 80,30 100,25 120,20 140,18 160,12 180,10 200,8"/>
+                  </svg>
+                </div>
+                <div class="corp-sector">Defense & Aerospace</div>
+                <div class="corp-stats">
+                  <div class="corp-stat">
+                    <span class="stat-label">Mkt Cap</span>
+                    <span class="stat-value">53.4T</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Volume</span>
+                    <span class="stat-value">67.8M</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">P/E</span>
+                    <span class="stat-value">31.4</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">52W Range</span>
+                    <span class="stat-value">1,412-1,892</span>
+                  </div>
+                </div>
+                <p class="corp-news">VoidTech awarded 2.4T credit contract for fleet expansion program.</p>
+              </div>
+
+              <!-- Titanforge Industries -->
+              <div class="corp-card delisted">
+                <div class="corp-header">
+                  <div class="corp-info">
+                    <h3 class="corp-name">Titanforge Industries</h3>
+                    <span class="corp-status">DELISTED</span>
+                  </div>
+                  <div class="corp-price">
+                    <span class="price-value">1,542.78</span>
+                    <span class="price-final">Final</span>
+                  </div>
+                </div>
+                <div class="corp-chart">
+                  <svg viewBox="0 0 200 50" preserveAspectRatio="none">
+                    <polyline class="chart-line delisted" points="0,25 200,25"/>
+                  </svg>
+                </div>
+                <div class="corp-sector">Heavy Manufacturing</div>
+                <div class="corp-stats">
+                  <div class="corp-stat">
+                    <span class="stat-label">Mkt Cap</span>
+                    <span class="stat-value muted">—</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Volume</span>
+                    <span class="stat-value muted">—</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Status</span>
+                    <span class="stat-value">Merged</span>
+                  </div>
+                  <div class="corp-stat">
+                    <span class="stat-label">Acquired By</span>
+                    <span class="stat-value">ABYS</span>
+                  </div>
+                </div>
+                <p class="corp-news">Titanforge shareholders approve merger with Abyssal Mining Consortium in 20.8T credit deal.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Star Map Tab -->
+          <div class="tab-pane" id="map">
+            <div class="section-header text-left mb-4">
+              <span class="section-label">// Navigation Database</span>
+              <h2>Sector 36</h2>
+              <p class="text-secondary">
+                Navigate the Viridian Shroud Nebula.
+              </p>
+            </div>
+            
+            <!-- Map Display -->
+            <div class="map-container mt-4">
+              <img src="assets/images/map.jpg" alt="Sector 36 Star Map" class="map-image" id="star-map">
+            </div>
+
+            <!-- Fullscreen Map Overlay (Mobile) -->
+            <div class="map-fullscreen" id="map-fullscreen">
+              <button class="map-fullscreen-close" aria-label="Close fullscreen map">&times;</button>
+              <img src="assets/images/map.jpg" alt="Sector 36 Star Map">
+            </div>
+
+            <!-- Key Locations -->
+            <h3 class="mt-5 mb-4">Key Locations</h3>
+            <div class="grid grid-2">
+              <div class="card">
+                <h4 class="text-accent mb-2">Nova Prime</h4>
+                <p class="text-secondary mb-0">
+                  The capital colony and administrative hub of Sector 36, orbiting Nova Sol.
+                  A single mega-city houses 100 million people, with Ingram's largest compute
+                  nodes beneath the surface.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Gateway Ring</h4>
+                <p class="text-secondary mb-0">
+                  A ring megastructure near the jump gate, serving as the sector's major port.
+                  Once home to 20 million, it's now overwhelmed with 100 million refugees
+                  awaiting transport out of the sector. Crime rises as shortages worsen.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Verdant</h4>
+                <p class="text-secondary mb-0">
+                  A lush, green world orbiting the star Demeter. The sector's primary food
+                  supplier, once home to 300 million colonists. The exodus has left farms
+                  abandoned and harvests uncollected, threatening sector-wide famine.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Forge</h4>
+                <p class="text-secondary mb-0">
+                  An industrial colony on a harsh, metal-rich planet orbiting Vulcan.
+                  250 million colonists live in massive underground cities, working in
+                  mining and heavy industry. Corporate security keeps operations running
+                  despite the war.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Eureka Base</h4>
+                <p class="text-secondary mb-0">
+                  A research facility on a remote moon orbiting neutron star NS-36-A.
+                  Studies the region's gravitational anomalies. Since the war, access is
+                  highly restricted and military assets are amassed in the area.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Echo Point</h4>
+                <p class="text-secondary mb-0">
+                  Once a thriving colony of 20 million on a moon in the Venture system.
+                  Completely destroyed by Tauran orbital bombardment during the war.
+                  The city now lies in ruins—a stark reminder of first contact gone wrong.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Horizon Station</h4>
+                <p class="text-secondary mb-0">
+                  A frontier outpost on the edge of explored space. Originally a
+                  base for further expansion, it now shelters desperate refugees
+                  who fled as far from the conflict as possible.
+                </p>
+              </div>
+
+              <div class="card">
+                <h4 class="text-accent mb-2">Derelict A1X-VD2</h4>
+                <p class="text-secondary mb-0">
+                  The only Tauran vessel in human space, incapacitated during the war.
+                  Adrift in interstellar space and heavily guarded by military forces.
+                  Rumors about its cargo and crew abound, but all information is classified.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Tab -->
+          <div class="tab-pane" id="timeline">
+            <div class="section-header text-left mb-4">
+              <span class="section-label">// Historical Archive</span>
+              <h2>Timeline</h2>
+            </div>
+            
+            <div class="timeline mt-5">
+              <div class="timeline-item">
+                <div class="timeline-date">32 Years Ago</div>
+                <h4 class="timeline-title">Sector 36 Jump Gate Opens</h4>
+                <p class="timeline-content">
+                Deep-space construction ships sent by Dominion Nexus complete
+                the Sector 36 jump gate, connecting the Viridian Shroud Nebula
+                to the wider interstellar network.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">31 Years Ago</div>
+                <h4 class="timeline-title">Sector 36 Colonization</h4>
+                <p class="timeline-content">
+                Colonies are established on Verdant, Forge, and Nova Prime.
+                </p>
+                <p class="timeline-content">
+                Verdant becomes the major farming colony, Forge the industrial
+                hub, and Nova Prime the administrative center. 
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">30 Years Ago</div>
+                <h4 class="timeline-title">NS-36-A Anomalies Detected</h4>
+                <p class="timeline-content">
+                Gravitational anomalies of unknown origin are detected around a
+                neutron star in the sector. Eureka Base is established to study
+                the phenomena.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">28 Years Ago</div>
+                <h4 class="timeline-title">The Gateway Ring Construction Completed</h4>
+                <p class="timeline-content">
+                Dominion Nexus completes the construction of the Gateway Ring, a
+                ring structure in proximity to the jump gate, which quickly
+                becomes the logistics hub of the sector.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">25 Years Ago</div>
+                <h4 class="timeline-title">Echo Point Settled</h4>
+                <p class="timeline-content">
+                Echo Point is settled as a springboard for sector expansion
+                further towards the core of the galaxy. It ends up becoming the
+                go-to destination for artists around the sector.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">5 Years Ago</div>
+                <h4 class="timeline-title">Titanforge/Abyssal Conflict</h4>
+                <p class="timeline-content">
+                Titanforge Industries and the Abyssal Mining Consortium engage
+                in open conflict over astrium deposits on Forge. The AI Council
+                has the military intervene to protect civilian lives. The
+                conflict ends with a merger of the two corporations.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">4 Years Ago</div>
+                <h4 class="timeline-title">Horizon Station Opens</h4>
+                <p class="timeline-content">
+                The newest settlement in the sector, Horizon Station is open to
+                the public. Horizon Station is not on a celestial body, rather
+                it is a space habitat orbiting a small rocky planet with no
+                atmosphere.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">1 Year Ago</div>
+                <h4 class="timeline-title">The Tauran War</h4>
+                <p class="timeline-content">
+                The Taurans enter Sector 36 and head towards Eureka Base. They
+                use a strange pattern of superluminal flight mixed with
+                stretches of travel at subluminal speed, giving the military a
+                chance to react and prepare defenses.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">6 Months Ago</div>
+                <h4 class="timeline-title">Echo Point Destroyed</h4>
+                <p class="timeline-content">
+                The brief Taruan was ends with the devastation of Echo Point. A
+                truce is established soon after and the Taurans withdraw from
+                the sector.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">Present Day</div>
+                <h4 class="timeline-title">Post-War Status</h4>
+                <p class="timeline-content">
+                The war and its aftermath have caused major upheaval in Sector
+                36. Military presence is at an all-time high, the jump gate is
+                used almost exclusively for military traffic, and civilians are
+                desperate to leave the sector after witnessing the destruction of
+                Echo Point.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: var(--color-bg-secondary);">
+    <div class="container container-narrow text-center">
+      <h2>Want the Full Picture?</h2>
+      <p class="text-secondary mb-4">
+        Dive deeper into Sector 36 with classified intelligence reports 
+        and in-universe documentation.
+      </p>
+      <div class="hero-cta">
+        <a href="classified.html" class="btn btn-classified">Access Classified Files</a>
+        <a href="story.html" class="btn btn-secondary">Return to The Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">SECTOR <span>36</span></div>
+          <p class="footer-description">
+            A hard science fiction that blends military tension, misaligned artificial intelligence, and first-contact themes, exploring what it means to remain human in a world dominated by corporate interests and inscrutable AIs.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="story.html">The Story</a></li>
+            <li><a href="universe.html">The Universe</a></li>
+            <li><a href="classified.html">Classified Files</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://sector36.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+            <li><a href="https://x.com/vladris" target="_blank" rel="noopener">Twitter/X</a></li>
+            <li><a href="https://www.goodreads.com/author/show/19759780.Vlad_Riscutia" target="_blank" rel="noopener">Goodreads</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Get the Book</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.amazon.com/Sector-36-Vlad-Riscutia-ebook/dp/B0G832MN9J/" target="_blank" rel="noopener">Amazon</a></li>
+            <li><a href="https://www.barnesandnoble.com/w/sector-36-vlad-riscutia/1148984778" target="_blank" rel="noopener">Barnes & Noble</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© Saturn9 LLC. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
