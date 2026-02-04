@@ -267,6 +267,35 @@ a:hover {
   width: 100%;
 }
 
+/* Event nav link - highlighted */
+.nav-link-event {
+  background: rgba(255, 107, 53, 0.15);
+  border: 1px solid var(--color-accent-warning);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm) !important;
+  color: var(--color-accent-warning) !important;
+  animation: eventPulse 2s ease-in-out infinite;
+}
+
+.nav-link-event:hover,
+.nav-link-event.active {
+  background: rgba(255, 107, 53, 0.25);
+  color: #ff8c5a !important;
+}
+
+.nav-link-event::after {
+  display: none;
+}
+
+@keyframes eventPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 107, 53, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.6);
+  }
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
