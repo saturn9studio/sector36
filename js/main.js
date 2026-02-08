@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnimations();
   initEmailLinks();
   initFullscreenMap();
-  initEventModal();
 });
 
 /**
@@ -308,55 +307,3 @@ function initFullscreenMap() {
   });
 }
 
-/**
- * Event Modal - Show special event announcement
- */
-function initEventModal() {
-  const modal = document.getElementById('event-modal');
-  if (!modal) return;
-
-  const dismissButton = modal.querySelector('.event-modal-dismiss');
-  const overlay = modal.querySelector('.event-modal-overlay');
-
-  // Always show modal on home page
-  if (window.location.pathname.endsWith('index.html') ||
-      window.location.pathname === '/' ||
-      window.location.pathname.endsWith('/')) {
-    // Delay showing modal slightly for better UX
-    setTimeout(() => {
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }, 1000);
-  }
-
-  // Function to close modal
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  // Dismiss button
-  if (dismissButton) {
-    dismissButton.addEventListener('click', closeModal);
-  }
-
-  // Close on overlay click
-  if (overlay) {
-    overlay.addEventListener('click', closeModal);
-  }
-
-  // Close on escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  // When user clicks "View Mission Brief", also close the modal
-  const viewBriefButton = modal.querySelector('a[href="event.html"]');
-  if (viewBriefButton) {
-    viewBriefButton.addEventListener('click', () => {
-      closeModal();
-    });
-  }
-}
